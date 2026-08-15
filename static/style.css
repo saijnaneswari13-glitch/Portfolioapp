@@ -1,0 +1,164 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body
+{
+    margin:0;
+    background:#050816;
+    color:#e5e7eb;
+    font-family:Arial,system-ui,sans-serif;
+    line-height:1.6
+}
+a
+{
+    color:inherit;
+    text-decoration:none
+}
+nav
+{
+    position:sticky;
+    top:0;
+    z-index:9;
+    padding:18px 6%;
+    display:flex;
+    justify-content:space-between;
+    background:#050816ee;
+    border-bottom:
+    1px solid white
+}
+nav div
+{
+    display:flex;
+    gap:20px;
+    color:#94a3b8
+}
+.hero,section
+{
+    max-width:1150px;
+    margin:auto;
+    padding:100px 24px
+}
+.hero
+{
+    min-height:75vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center
+}
+.hero h1
+{
+    font-size:clamp(55px,10vw,115px);
+    line-height:.95;
+    margin:8px 0;
+    background:linear-gradient(90deg,#fff,#00c6ff,#a855f7,#ec4899);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.hero h2
+{
+    font-size:30px
+}
+small
+{
+    color:#00c6ff;
+    font-weight:bold;
+    letter-spacing:2px
+}
+section
+{
+    border-top:1px solid white
+}
+section h2
+{
+    font-size:clamp(38px,6vw,70px)
+}
+.large
+{
+    font-size:23px;
+    color:#cbd5e1;
+    max-width:800px
+}
+.grid
+{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:18px
+}
+.skill-card,
+.edu-card,
+.cert-card
+{
+    background:#eae8ed;
+    border:1px solid white;
+    border-radius:18px;
+    padding:20px
+}
+.skill-card
+{
+    display:flex;
+    justify-content:space-between;
+    gap:10px
+}
+.rating
+{
+    display:block;
+    color:#ffc83d;
+    font-size:20px
+}
+.cert-photo
+{
+    height:220px;
+    background:white;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    margin-bottom:15px
+}
+.cert-photo img
+{
+    width:100%;
+    height:100%;
+    object-fit:contain
+}
+.no-photo
+{
+    color:#64748b
+}
+.socials
+{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap
+}
+.socials a
+{
+    padding:13px 20px;
+    border:1px solid #334155;
+    border-radius:12px
+}
+.socials 
+a:hover
+{
+    border-color:#00c6ff;
+    color:#00c6ff
+}
+footer
+{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid #1e293b;
+    color:#64748b
+}
+@media(max-width:700px)
+{
+    nav div
+    {
+        display:none
+    }
+    .hero,
+    section
+    {
+        padding:70px 18px
+    }
+}
