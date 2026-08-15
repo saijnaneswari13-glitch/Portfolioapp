@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>{{NAME}} Portfolio</title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+<body>
+    <nav>
+        <a href="#home">✦ {{NAME}}</a>
+        <div>
+            <a href="#objective">Objective</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+<section id="home" class="hero">
+    <small>HELLO, I'M</small><h1>{{NAME}}</h1>
+    <h2>{{TITLE}}</h2>
+    <p>{{LOCATION}}</p>
+</section>
+<section id="objective">
+    <small>01 — OBJECTIVE</small>
+    <h2>Career Objective</h2>
+    <p class="large">{{OBJECTIVE}}</p>
+</section>
+<section id="skills">
+    <small>02 — SKILLS</small>
+    <h2>Skills & Ratings</h2>
+    <div class="grid">{{SKILLS}}</div>
+</section>
+<section id="education">
+    <small>03 — EDUCATION</small>
+    <h2>Education</h2>
+    <div class="grid">{{EDUCATION}}</div>
+</section>
+<section id="certificates">
+    <small>04 — CERTIFICATES</small>
+    <h2>Certificates</h2>
+    <div class="grid">{{CERTIFICATES}}</div>
+</section>
+<section id="contact">
+    <small>05 — CONTACT</small>
+    <h2>Let's Connect</h2>
+    <p>{{EMAIL}}</p>
+    <div class="socials">
+        <a class="external" href="{{LINKEDIN}}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="external" href="{{GITHUB}}" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div>
+</section>
+<footer>✦ {{NAME}} · 2026</footer>
+<script src="../static/script.js">
+</script>
+</body>
+</html>
